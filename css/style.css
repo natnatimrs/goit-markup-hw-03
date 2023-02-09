@@ -11,14 +11,20 @@
   --grey: #2e2f42;
   --white: #ffffff;
 }
-h1, h2, h3, h4, h5, h6 ,p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin-top: 0;
   margin-bottom: 0;
 }
 ul {
-margin-top: 0;
-margin-bottom: 0;
-padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 img {
   display: block;
@@ -32,7 +38,7 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 body {
@@ -106,30 +112,50 @@ body {
 /*=============HEADER=============*/
 .header {
 }
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .header-navigation {
+  align-items: center;
+  display: flex;
 }
 .header-logo {
   color: var(--navy-blue);
   line-height: 1.33;
+  margin-right: 76px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .focus-logo {
   color: var(--iris);
 }
 .header-list {
+  display: flex;
+  gap: 40px;
 }
 
 .header-item {
   font-weight: 500;
   line-height: 1.33;
+  font-size: 16px;
   color: var(--navy-blue);
 }
 .header-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header-adress {
 }
 .adress {
+  display: flex;
+  margin-left: auto;
 }
 .contact-list {
+  display: flex;
+  gap: 40px;
 }
 .contact-item {
   line-height: 1.5;
@@ -148,11 +174,13 @@ body {
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
- margin-left: auto;
- margin-right: auto;
- margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
 }
 .modal-btn {
+  min-width: 169px;
+  height: 56px;
   color: inherit;
   background-color: var(--iris);
   font-family: "Roboto", sans-serif;
@@ -162,6 +190,7 @@ body {
   letter-spacing: 0.04em;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 4px;
 }
 /*=============/HERO=============*/
 
@@ -170,15 +199,15 @@ body {
   padding-top: 120px;
 }
 .hiden-title {
-
 }
 .prioritets-list {
+  display: flex;
 }
 .prioritets-item {
 }
 
 .prioritets-item-title {
-  font-weight: 500;
+    font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   color: var(--slate);
@@ -191,10 +220,18 @@ body {
 /*=============/PRIORITETS=============*/
 
 /*=============PROMOTIONS=============*/
+.promotion {
+  padding-bottom: 120px;
+   padding-top: 120px;
+}
 .promotion-title {
-  padding-top: 120px;
+  margin-bottom: 72px;
+  text-align: center;
+  
 }
 .promotion-list {
+  gap: 24px;
+  display: flex;
 }
 .promotion-item {
   height: 300px;
@@ -203,18 +240,21 @@ body {
 
 /*=============TEAM=============*/
 .team {
-  background: var(--cloud);
-}
-.team-title {
-font-family: 'Roboto', sans-serif;
-font-weight: 700;
-font-size: 36px;
-line-height: 1.11;
-padding-top: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: var(--cloud);}
 
+.team-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
 }
 
 .team-list {
+  gap: 24px;
+  display: flex;
 }
 
 .team-item {
@@ -241,20 +281,21 @@ padding-top: 120px;
 .footer {
   padding-top: 120px;
   background: var(--navy-blue);
+  padding-bottom: 100px;
 }
 .footer-logo {
   line-height: 1.17;
   text-transform: uppercase;
   color: var(--cloud);
-  padding-top: 100px;
-  
+  margin-bottom: 16px;
 }
 
 .footer-text {
+  max-width: 264px;
+  height: 72px;
   line-height: 1.5;
   color: var(--cornflower);
-  padding-top: 16px;
-  padding-bottom: 100px;
+
 }
 /*=============/FOOTER=============*/
 /*----------------PORTFOLIO----------------*/
@@ -262,14 +303,14 @@ padding-top: 120px;
 /*=============PROJECT=============*/
 .project {
   margin-top: 96px;
-margin-bottom: 72px; 
+  margin-bottom: 72px;
 }
 .project-list {
 }
 .project-item {
 }
 .project-btn {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.04em;
   color: var(--iris);
   background-color: var(--cloud);
@@ -282,10 +323,10 @@ margin-bottom: 72px;
 .benefits-item {
 }
 .benefits-title {
-font-weight: 500;
-font-size: 20px;
-line-height: 1,2;
-color: var(--navy-blue);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1, 2;
+  color: var(--navy-blue);
 }
 .benefits-text {
   line-height: 1.5;
