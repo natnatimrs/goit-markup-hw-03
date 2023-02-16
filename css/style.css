@@ -46,7 +46,6 @@ body {
   font-size: 16px;
   color: var(--slate);
   background-color: var(--white);
-  /* hughuihho8i */
 }
 
 .hiden-title {
@@ -111,6 +110,8 @@ body {
 
 /*=============HEADER=============*/
 .header {
+  background: var(--white);
+  border-bottom: 1px solid var(--cornflower);
 }
 .header-container {
   display: flex;
@@ -173,11 +174,12 @@ body {
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
-  margin-left: auto;
+  max-width: 496px;
   margin-right: auto;
+  margin-left: auto;
   margin-bottom: 48px;
 }
+
 .modal-btn {
   min-width: 169px;
   height: 56px;
@@ -202,12 +204,14 @@ body {
 }
 .prioritets-list {
   display: flex;
+  gap: 24px;
 }
 .prioritets-item {
+  width: calc((100%-72px) / 4);
 }
 
 .prioritets-item-title {
-    font-weight: 500;
+  font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   color: var(--slate);
@@ -222,19 +226,21 @@ body {
 /*=============PROMOTIONS=============*/
 .promotion {
   padding-bottom: 120px;
-   padding-top: 120px;
+  padding-top: 120px;
 }
 .promotion-title {
+  width: 323px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 72px;
-  text-align: center;
-  
 }
 .promotion-list {
-  gap: 24px;
   display: flex;
+  gap: 24px;
 }
+
 .promotion-item {
-  height: 300px;
+  width: calc((100% - 48px) / 3);
 }
 /*=============/PROMOTIONS=============*/
 
@@ -242,40 +248,115 @@ body {
 .team {
   padding-top: 120px;
   padding-bottom: 120px;
-  background: var(--cloud);}
+  background: var(--cloud);
+}
 
 .team-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  text-align: center;
+  width: 162px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 72px;
 }
 
 .team-list {
-  gap: 24px;
   display: flex;
+  gap: 24px;
 }
 
 .team-item {
   background-color: var(--white);
-  width: 264px;
-  height: 380px;
+  width: calc((100% - 72px) / 4);
 }
 
 .team-expert {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  text-align: center;
   color: var(--navy-blue);
+  margin-bottom: 8px;
 }
-
+.team-expert-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+text-align: center;
+}
 .team-subtitle {
   line-height: 1.5;
 }
 
 /*=============/TEAM=============*/
+
+/*----------------PORTFOLIO----------------*/
+
+/*=============PROJECT=============*/
+.project {
+  padding-top: 96px;
+  margin-bottom: 72px;
+}
+
+.project-list {
+  justify-content: center;
+  display: flex;
+  gap: 24px;
+}
+.project-item {
+}
+.project-btn {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.04em;
+  color: var(--iris);
+  background-color: var(--cloud);
+  padding: 12px 24px;
+  border: 1px solid var(--cornflower);
+  border-radius: 4px;
+}
+/*=============/PROJECT=============*/
+
+/*=============BENEFITS=============*/
+.benefits {
+}
+.benefits-container{
+margin-bottom: 120px;
+}
+
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.benefits-item {
+  background: var(--white);
+  width: calc((100% - 48px) / 3);
+  
+}
+
+.benefits-title-text {
+  background-color: var(--white);
+  border-left: 1px solid var(--cornflower);
+  border-bottom: 1px solid var(--cornflower);
+  border-right: 1px solid var(--cornflower);
+  padding: 32px 0 32px 16px;
+}
+
+.benefits-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1, 2;
+  color: var(--navy-blue);
+  margin-bottom: 8px;
+}
+
+.benefits-text {
+  line-height: 1.5;
+  color: var(--slate);
+}
 
 /*=============FOOTER=============*/
 .footer {
@@ -295,40 +376,5 @@ body {
   height: 72px;
   line-height: 1.5;
   color: var(--cornflower);
-
 }
 /*=============/FOOTER=============*/
-/*----------------PORTFOLIO----------------*/
-
-/*=============PROJECT=============*/
-.project {
-  margin-top: 96px;
-  margin-bottom: 72px;
-}
-.project-list {
-}
-.project-item {
-}
-.project-btn {
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 0.04em;
-  color: var(--iris);
-  background-color: var(--cloud);
-}
-
-/*=============/PROJECT=============*/
-
-.benefits-list {
-}
-.benefits-item {
-}
-.benefits-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1, 2;
-  color: var(--navy-blue);
-}
-.benefits-text {
-  line-height: 1.5;
-  color: var(--slate);
-}
