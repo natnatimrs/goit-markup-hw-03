@@ -33,7 +33,7 @@ img {
 }
 
 .container {
-  width: 1128px;
+  width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -135,6 +135,8 @@ body {
 .header-list {
   display: flex;
   gap: 40px;
+      padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-item {
@@ -145,14 +147,14 @@ body {
 }
 .header-link {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .header-adress {
 }
 .adress {
   display: flex;
   margin-left: auto;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .contact-list {
   display: flex;
@@ -178,6 +180,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 48px;
+  text-align: center;
 }
 
 .modal-btn {
@@ -199,6 +202,7 @@ body {
 /*=============PRIORITETS=============*/
 .prioritets {
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 .hiden-title {
 }
@@ -207,7 +211,7 @@ body {
   gap: 24px;
 }
 .prioritets-item {
-  width: calc((100%-72px) / 4);
+  width: calc((100% - 72px) / 4);
 }
 
 .prioritets-item-title {
@@ -226,13 +230,11 @@ body {
 /*=============PROMOTIONS=============*/
 .promotion {
   padding-bottom: 120px;
-  padding-top: 120px;
 }
 .promotion-title {
-  width: 323px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
   margin-bottom: 72px;
+  text-transform: capitalize;
 }
 .promotion-list {
   display: flex;
@@ -256,9 +258,8 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  width: 162px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
+  text-transform: capitalize;
   margin-bottom: 72px;
 }
 
@@ -270,6 +271,7 @@ body {
 .team-item {
   background-color: var(--white);
   width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-expert {
@@ -282,8 +284,10 @@ body {
 .team-expert-container {
   padding-top: 32px;
   padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
   display: block;
-text-align: center;
+  text-align: center;
 }
 .team-subtitle {
   line-height: 1.5;
@@ -291,18 +295,18 @@ text-align: center;
 
 /*=============/TEAM=============*/
 
-/*----------------PORTFOLIO----------------*/
 
 /*=============PROJECT=============*/
 .project {
-  padding-top: 96px;
-  margin-bottom: 72px;
+  margin-bottom: 120px;
 }
 
 .project-list {
   justify-content: center;
   display: flex;
   gap: 24px;
+  padding-top: 96px;
+  margin-bottom: 72px;
 }
 .project-item {
 }
@@ -314,14 +318,12 @@ text-align: center;
   padding: 12px 24px;
   border: 1px solid var(--cornflower);
   border-radius: 4px;
+  border-color: transparent;
 }
 /*=============/PROJECT=============*/
 
 /*=============BENEFITS=============*/
 .benefits {
-}
-.benefits-container{
-margin-bottom: 120px;
 }
 
 .benefits-list {
@@ -333,8 +335,7 @@ margin-bottom: 120px;
 
 .benefits-item {
   background: var(--white);
-  width: calc((100% - 48px) / 3);
-  
+  width: calc ((100% - 48px) / 3);
 }
 
 .benefits-title-text {
@@ -342,7 +343,10 @@ margin-bottom: 120px;
   border-left: 1px solid var(--cornflower);
   border-bottom: 1px solid var(--cornflower);
   border-right: 1px solid var(--cornflower);
-  padding: 32px 0 32px 16px;
+  padding-top: 32px;
+  padding-right: 16px;
+  padding-bottom: 32px;
+  padding-left: 0;
 }
 
 .benefits-title {
@@ -363,12 +367,16 @@ margin-bottom: 120px;
   padding-top: 120px;
   background: var(--navy-blue);
   padding-bottom: 100px;
+  
 }
 .footer-logo {
   line-height: 1.17;
   text-transform: uppercase;
   color: var(--cloud);
   margin-bottom: 16px;
+  display: block;
+}
+.focus-logo {
 }
 
 .footer-text {
